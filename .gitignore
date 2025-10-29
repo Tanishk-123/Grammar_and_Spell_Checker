@@ -1,0 +1,60 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
+# -------------------------
+# Python & Flask ignores
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Environment files
+.env
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / cache
+.pytest_cache/
+.cache/
+*.sqlite3
+
+# Flask / local development
+instance/
+*.db
+*.sqlite
+*.db-journal
+
+# Node / frontend build (if you ever add one)
+node_modules/
+dist/
+build/
+
+# -------------------------
+# Virtual environment config
+# -------------------------
+Lib/
+Include/
+Scripts/
+pyvenv.cfg
+
+# -------------------------
+# Miscellaneous
+# -------------------------
+*.bak
+*.swp
+*.tmp
