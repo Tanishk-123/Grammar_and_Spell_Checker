@@ -4,7 +4,12 @@
 from textblob import TextBlob
 from language_tool_python import LanguageTool
 
+# Spell Checking (.correct() method)
+# Recommended limit: ~100–200 words per call.
 
+# Language_tool_python
+# Used for grammar (.check() method)
+# 20,000 characters (~3000 words) per check.
 class SpellCheckerModule:
     def __init__(self):
         # Initialize the TextBlob and LanguageTool instances
@@ -48,7 +53,7 @@ class SpellCheckerModule:
         # (like subject-verb agreement, punctuation, style, etc.)
 
         found_mistakes = []  # To store detected rule IDs
-
+        # corrected_sentence = self.grammar_check.utils.correct(text, matches)
         # Extract rule IDs from each Match object
         for mistake in matches:
             found_mistakes.append(mistake.ruleId)
